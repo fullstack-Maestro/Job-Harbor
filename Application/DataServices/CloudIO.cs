@@ -1,6 +1,4 @@
-﻿using Google.Apis.Auth.OAuth2;
-using Google.Cloud.Storage.V1;
-using Infrastructure.Configurations;
+﻿using Google.Cloud.Storage.V1;
 using System.Text;
 
 namespace Infrastructure.Services;
@@ -9,9 +7,9 @@ public static class CloudIO
 {
     public static async Task UploadAsync(string filePath)
     {
-        var credentials = GoogleCredential.FromFile(Constants.CredentialsPath);
+        //var credentials = GoogleCredential.FromFile(Constants.CredentialsPath);
 
-        var storage = await StorageClient.CreateAsync(credentials);
+        var storage = await StorageClient.CreateAsync(/*credentials*/);
 
         byte[] jsonData = Encoding.UTF8.GetBytes(filePath);
 
@@ -21,9 +19,9 @@ public static class CloudIO
 
     public static async Task<string> GetAsync(string filePath)
     {
-        var credentials = GoogleCredential.FromFile(Constants.CredentialsPath);
+        //var credentials = GoogleCredential.FromFile(Constants.CredentialsPath);
 
-        var storage = await StorageClient.CreateAsync(credentials);
+        var storage = await StorageClient.CreateAsync(/*credentials*/);
 
         var stream = new MemoryStream();
 

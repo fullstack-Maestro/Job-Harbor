@@ -7,18 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\Jobs\" />
-    <Folder Include="Entities\Applications\" />
-    <Folder Include="Entities\Categories\" />
-    <Folder Include="Entities\Commons\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="Extensions\" />
-    <Folder Include="Services\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Google.Cloud.Storage.V1" Version="4.8.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Spectre.Console" Version="0.48.0" />
   </ItemGroup>
 
 </Project>

@@ -2,9 +2,11 @@
 {
     internal class Program
     {
-        static void Main()
+        [Obsolete]
+        static async Task Main()
         {
-            Console.WriteLine("Hello, World!");
+            var application = new MainPage();
+            await application.Run();
         }
     }
 }

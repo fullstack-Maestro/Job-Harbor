@@ -10,6 +10,7 @@
     <PackageReference Include="Google.Apis.Iam.v1" Version="1.67.0.3304" />
     <PackageReference Include="Google.Cloud.Storage.V1" Version="4.8.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Spectre.Console" Version="0.48.0" />
   </ItemGroup>
 
 </Project>

@@ -2,7 +2,7 @@
 
 namespace Domain.Helpers;
 
-public class PaswordHasher
+public class PasswordHasher
 {
     [Obsolete("Obsolete")]
     public static (string Hash, byte[] Salt) GenerateHash(string password)

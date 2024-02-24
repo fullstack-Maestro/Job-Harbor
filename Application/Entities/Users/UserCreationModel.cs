@@ -1,9 +1,8 @@
-﻿using Domain.Entities.Commons;
-using Domain.Enums;
+﻿using Domain.Enums;
 
 namespace Domain.Entities.Users;
 
-public class User : Auditable
+public class UserCreationModel
 {
     public string Name { get; set; } = null!;
     public string Email { get; set; } = null!;
